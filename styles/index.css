@@ -1,0 +1,57 @@
+@import url(global.css);
+
+#app {
+    display: grid;
+    grid-template-columns: 32.78% 67.22%;
+
+    height: 100%;
+    overflow: hidden;
+}
+
+aside {
+    padding: 2rem;
+    background-color: #212526;
+    border-radius: 0.75rem;
+    /*background: linear-gradient(180deg, rgba(33, 37, 38, 0.8) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.3) 40.5%, rgba(33, 37, 38, 0.1) 100%), url();*/
+
+    & .aside-container {
+        max-width: 21rem;
+        margin-left: auto;
+    }
+
+    & h2 {
+        font: var(--text-logo);
+        text-transform: capitalize;
+
+        color: var(--accent-pink);
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    & p {
+        color: var(--text-heading);
+        font: var(--body-md);
+    }
+}
+
+main {
+    overflow: auto;
+    padding: 5rem 8.125rem;
+
+    & .main-container {
+        max-width: 35rem;
+        margin-left: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
