@@ -63,12 +63,13 @@ fieldset {
 
 input,
 textarea,
-select {
+select,
+.button-group {
     appearance: none;
     width: 100%;
     border-radius: 0.5rem;
     border: 1px solid #363B40;
-    background: #1C1F21;
+    
     padding: 0.8125rem 1rem;
 }
 
@@ -86,6 +87,13 @@ label {
     margin-bottom: 0.75rem;
 
     display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  
 }
 
 

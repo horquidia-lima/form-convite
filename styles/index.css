@@ -64,8 +64,30 @@ main {
         & .about-event .flex {
             gap: 1rem;
         }
+
+        & .button-group {
+            align-items: center;
+
+            & .btn-presencial {
+                border-radius: 0.25rem;
+                color: var(--text-heading);
+                font-weight: 600;
+                line-height: 19px;
+                font-size: 0.875rem;
+                background-color: #363B40;
+            }
+
+            & .btn-online {
+                color: var(--text-body);
+            }
+        }
     }
 }
+
+
+
+
+
 
 
 
