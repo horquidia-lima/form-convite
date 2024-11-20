@@ -34,7 +34,7 @@
 
 body {
     overflow: hidden;
-    font: var(--body-md);
+    font-family: var(--font-family);
     color: var(--text-body);
 }
 
@@ -46,4 +46,56 @@ img {
 .flex {
   display: flex;
 }
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 1rem;
+}
+
+input,
+textarea,
+select {
+    appearance: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #363B40;
+    background: #1C1F21;
+    padding: 0.8125rem 1rem;
+}
+
+h1, legend {
+    color: var(--text-heading);
+    font-family: 'Baloo 2';
+    font-weight: 700;
+}
+
+label {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 19px;
+    margin-bottom: 0.75rem;
+
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
 
