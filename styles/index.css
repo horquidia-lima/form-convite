@@ -35,7 +35,7 @@ aside {
 }
 
 main {
-    background-color: #131516;
+    background-color: var(--input-base);
     border-radius: 0.75rem;
     overflow: auto;
     padding: 5rem 8.125rem;
@@ -64,28 +64,54 @@ main {
         & .about-event .flex {
             gap: 1rem;
         }
-
-        & .button-group {
-            align-items: center;
-
-            & .btn-presencial {
-                border-radius: 0.25rem;
-                color: var(--text-heading);
-                font-weight: 600;
-                line-height: 19px;
-                font-size: 0.875rem;
-                background-color: #363B40;
-            }
-
-            & .btn-online {
-                color: var(--text-body);
-            }
-        }
     }
 }
 
+.input-group {
+    align-items: center;
+    gap: 1rem;
+}
+.input-option {
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
+.buttons {
+    gap: 0.5rem;
+    appearance: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #363B40;
+    padding: 0.5rem;
+    background-color: var(--shape-background);
+}
 
+.btn {
+    align-items: center;
+    gap: 0.5rem;
+    padding:0.2rem 1rem;
+    background-color: var(--shape-background);
+    border-radius: 0.5rem;
+    color: #333;
+}
+
+.btn.active:hover {
+    border-radius: 0.25rem;
+    color: var(--text-heading);
+    font-weight: 600;
+    line-height: 19px;
+    font-size: 0.875rem;
+    background-color: #363B40;
+
+    & svg path {
+        stroke: var(--brand-light);
+    }
+}
+
+.input-location {
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 
 
