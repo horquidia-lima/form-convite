@@ -67,51 +67,42 @@ main {
     }
 }
 
-.input-group {
-    align-items: center;
-    gap: 1rem;
-}
-.input-option {
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.buttons {
-    gap: 0.5rem;
+.button-group {
     appearance: none;
     width: 100%;
     border-radius: 0.5rem;
     border: 1px solid #363B40;
-    padding: 0.5rem;
     background-color: var(--shape-background);
-}
+    padding: 0.7125rem 1rem;
 
-.btn {
-    align-items: center;
-    gap: 0.5rem;
-    padding:0.2rem 1rem;
-    background-color: var(--shape-background);
-    border-radius: 0.5rem;
-    color: #333;
-}
+    & .btn {
+        font-size: 0.875rem;
+        line-height: 19px;
+        border-radius: 0.5rem;
+        font-weight: 400;
+        color: var(--text-body);
+        width: 100%;
 
-.btn.active:hover {
-    border-radius: 0.25rem;
-    color: var(--text-heading);
-    font-weight: 600;
-    line-height: 19px;
-    font-size: 0.875rem;
-    background-color: #363B40;
+        &.presencial:hover,
+        &.online:hover {
+            background-color: #363B40;
+            font-weight: 600;
+            color: var(--text-heading);
 
-    & svg path {
-        stroke: var(--brand-light);
+            & svg path {
+                stroke: var(--brand-light);
+            }
+        }
     }
+
 }
 
-.input-location {
-    flex-direction: column;
-    gap: 0.5rem;
-}
+
+
+
+
+
+
 
 
 
