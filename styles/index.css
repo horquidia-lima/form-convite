@@ -97,7 +97,31 @@ main {
 
 }
 
+.radio-inner {
+    flex-wrap: wrap;
+    gap: 0.75rem;
 
+    & label {
+        cursor: pointer;
+    }
+
+    & input[type="radio"] {
+        display: none;
+    }
+
+    & .color-circle {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid #2D3136;
+        transition: border 0.2s ease;
+    }
+
+    & input:checked + .color-circle {
+        border-color: #fff; /* Adiciona destaque ao círculo selecionado */
+}
+}
 
 
 
